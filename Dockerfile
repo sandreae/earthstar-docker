@@ -1,4 +1,4 @@
-FROM denoland/deno:latest
+FROM denoland/deno:1.19.0
 
 EXPOSE 8080
 
@@ -6,8 +6,7 @@ WORKDIR /app
 
 USER deno
 
-ADD . .
+ADD allow_list.json ./allow_list.json
 
-WORKDIR /app/replica-server
-
-CMD ["run", "--allow-net", "--allow-env", "--no-check", "https://deno.land/x/earthstar_replica_server@v1.0.0/server.ts"]
+RUN deno cache https://deno.land/x/earthstar_replica_server@v1.0.1/server.ts
+CMD ["run", "--allow-all", "--no-check", "https://deno.land/x/earthstar_replica_server@v1.0.1/server.ts"]
