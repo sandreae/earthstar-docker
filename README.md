@@ -1,5 +1,9 @@
 # Dockerized Earthstar Replica Server
 
+Deploy an [earthstar](https://github.com/earthstar-project/earthstar) replica server in a docker container.
+
+Based on the earthstar-project replica server implementation [here](https://github.com/earthstar-project/replica-server).
+
 ## Dependencies
 
 - Docker
