@@ -1,0 +1,10 @@
+[submodule "earthstar"]
+	path = earthstar
+	url = https://github.com/earthstar-project/earthstar
+[submodule "earthstar-streaming-rpc"]
+	path = earthstar-streaming-rpc
+	url = https://github.com/earthstar-project/earthstar-streaming-rpc
+[submodule "replica-server"]
+	path = replica-server
+	url = https://github.com/sandreae/replica-server
+	branch = patch-1
